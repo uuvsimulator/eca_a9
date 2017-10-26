@@ -1,0 +1,5 @@
+*~
+*.pyc
+.clang_complete
+.idea
+.vscode

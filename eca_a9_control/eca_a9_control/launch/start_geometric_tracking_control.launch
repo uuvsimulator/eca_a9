@@ -1,0 +1,52 @@
+<launch>
+  <arg name="uuv_name" default="eca_a9"/>
+  <arg name="gui_on" default="true"/>
+
+  <arg name="teleop_on" default="false"/>
+  <arg name="joy_id" default="0"/>
+  <arg name="axis_yaw" default="0"/>
+  <arg name="axis_x" default="4"/>
+  <arg name="axis_y" default="3"/>
+  <arg name="axis_z" default="1"/>
+
+  <group if="$(arg teleop_on)">
+    <include file="$(find uuv_teleop)/launch/uuv_teleop.launch">
+        <arg name="uuv_name" value="$(arg uuv_name)"/>
+        <arg name="joy_id" value="$(arg joy_id)"/>
+        <arg name="output_topic" value="cmd_vel"/>
+        <arg name="message_type" value="twist"/>
+        <arg name="axis_yaw" value="$(arg axis_yaw)"/>
+        <arg name="axis_x" value="$(arg axis_x)"/>
+        <arg name="axis_y" value="$(arg axis_y)"/>
+        <arg name="axis_z" value="$(arg axis_z)"/>
+        <arg name="gain_yaw" default="0.2"/>
+        <arg name="gain_x" default="0.5"/>
+        <arg name="gain_y" default="0.5"/>
+        <arg name="gain_z" default="0.5"/>
+    </include>
+  </group>
+
+  <include file="$(find uuv_trajectory_control)/launch/auv_geometric_tracking_controller.launch">
+      <arg name="uuv_name" value="$(arg uuv_name)"/>
+      <arg name="thrust_gain" value="100"/>
+      <arg name="roll_gain" value="2.0"/>
+      <arg name="pitch_gain" value="2.0"/>
+      <arg name="yaw_gain" value="2.0"/>
+      <arg name="max_fin_angle" value="1.3962632"/>
+      <arg name="n_fins" value="4"/>
+      <arg name="fin_contribution_roll" value="1,1,1,1"/>
+      <arg name="fin_contribution_pitch" value="1,1,-1,-1"/>
+      <arg name="fin_contribution_yaw" value="-1,1,1,-1"/>
+      <arg name="fin_topic_prefix" value="fins/"/>
+      <arg name="fin_topic_suffix" value="/input"/>
+      <arg name="thruster_topic" value="thrusters/0/input"/>
+      <arg name="thruster_model_name" value="proportional"/>
+      <arg name="max_thrust" value="50"/>
+      <arg name="thruster_rotor_gain" value="0.000049"/>
+      <arg name="gui_on" value="$(arg gui_on)"/>
+  </include>
+
+  <group if="$(arg gui_on)">
+      <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d $(find eca_a9_control)/rviz/eca_a9_control.rviz"/>
+  </group>
+</launch>
