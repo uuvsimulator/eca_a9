@@ -1,0 +1,20 @@
+<launch>
+  <!-- Vehicle's initial position -->
+  <arg name="x" default="0"/>
+  <arg name="y" default="0"/>
+  <arg name="z" default="-5"/>
+  <arg name="yaw" default="0"/>
+
+  <arg name="joy_id" default="0"/>
+
+  <include file="$(find eca_a9_description)/launch/upload_eca_a9.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="z" value="$(arg z)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
+  </include>
+
+  <include file="$(find eca_a9_control)/launch/start_auv_teleop.launch">
+    <arg name="joy_id" default="$(arg joy_id)"/>
+  </include>
+</launch>

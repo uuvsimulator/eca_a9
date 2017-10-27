@@ -9,7 +9,7 @@
     <arg name="gain_pitch" value="1,1,-1,-1"/>
     <arg name="gain_yaw" value="-1,1,1,-1"/>
     <arg name="thruster_rotor_gain" value="0.000049"/>
-    <arg name="max_thrust" value="50"/>
+    <arg name="max_thrust" value="100"/>
     <arg name="thruster_joy_gain" value="-1.0"/>
   </include>
 

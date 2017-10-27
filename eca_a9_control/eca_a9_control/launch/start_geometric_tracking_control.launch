@@ -41,7 +41,7 @@
       <arg name="fin_topic_suffix" value="/input"/>
       <arg name="thruster_topic" value="thrusters/0/input"/>
       <arg name="thruster_model_name" value="proportional"/>
-      <arg name="max_thrust" value="50"/>
+      <arg name="max_thrust" value="100"/>
       <arg name="thruster_rotor_gain" value="0.000049"/>
       <arg name="gui_on" value="$(arg gui_on)"/>
   </include>
