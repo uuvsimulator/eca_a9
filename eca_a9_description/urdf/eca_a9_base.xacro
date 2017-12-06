@@ -120,18 +120,18 @@
     </xacro:thruster_module_first_order_basic_fcn_macro>
 
     <!-- TODO: Parametrize the battery unit -->
-    <!-- <xacro:basic_linear_battery_macro
+    <xacro:basic_linear_battery_macro
       namespace="${namespace}"
       parent_link="${namespace}/base_link"
       prefix=""
-      open_circuit_voltage_constant_coef="12.694"
+      open_circuit_voltage_constant_coef="3.7"
       open_circuit_voltage_linear_coef="-3.1424"
       initial_charge="1.1665"
-      capacity="1.2009"
-      resistance="0.061523"
+      capacity="0.5"
+      resistance="0.002"
       smooth_current_tau="1.9499"
-      voltage="20"
-      update_rate="2.0"/> -->
+      voltage="4.2"
+      update_rate="2.0"/>
 
     <xacro:include filename="$(find eca_a9_description)/urdf/eca_a9_sensors.xacro"/>
   </xacro:macro>

@@ -28,11 +28,11 @@
 
   <include file="$(find uuv_trajectory_control)/launch/auv_geometric_tracking_controller.launch">
       <arg name="uuv_name" value="$(arg uuv_name)"/>
-      <arg name="thrust_gain" value="100"/>
-      <arg name="roll_gain" value="2.0"/>
-      <arg name="pitch_gain" value="2.0"/>
-      <arg name="yaw_gain" value="2.0"/>
-      <arg name="max_fin_angle" value="1.3962632"/>
+      <arg name="thrust_gain" value="20.0"/>
+      <arg name="roll_gain" value="0.2"/>
+      <arg name="pitch_gain" value="0.8"/>
+      <arg name="yaw_gain" value="0.8"/>
+      <arg name="max_fin_angle" value="1.57"/>
       <arg name="n_fins" value="4"/>
       <arg name="fin_contribution_roll" value="1,1,1,1"/>
       <arg name="fin_contribution_pitch" value="1,1,-1,-1"/>
@@ -41,7 +41,8 @@
       <arg name="fin_topic_suffix" value="/input"/>
       <arg name="thruster_topic" value="thrusters/0/input"/>
       <arg name="thruster_model_name" value="proportional"/>
-      <arg name="max_thrust" value="100"/>
+      <arg name="max_thrust" value="120"/>
+      <arg name="min_thrust" value="20"/>
       <arg name="thruster_rotor_gain" value="0.000049"/>
       <arg name="gui_on" value="$(arg gui_on)"/>
   </include>
