@@ -19,7 +19,7 @@
   <xacro:include filename="$(find uuv_descriptions)/models/common/urdf/common.urdf.xacro" />
   <xacro:include filename="$(find uuv_sensor_plugins_ros)/urdf/sensor_snippets.xacro"/>
   <xacro:include filename="$(find eca_a9_description)/urdf/eca_a9_snippets.xacro"/>
-  <xacro:include filename="$(find uuv_gazebo_ros_plugins)/urdf/snippets.xacro"/>
+  <xacro:include filename="$(find uuv_gazebo_plugins_ros)/urdf/snippets.xacro"/>
   <!-- Properties -->
   <xacro:property name="mass" value="69.7"/>
   <xacro:property name="length" value="1.98"/>
