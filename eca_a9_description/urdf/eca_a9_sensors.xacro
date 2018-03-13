@@ -24,7 +24,9 @@
       suffix=""
       parent_link="${namespace}/base_link"
       topic="dvl"
-      scale="0.62">
+      scale="0.62"
+      update_rate="7"
+      reference_frame="world">
       <origin xyz="0.4785 0.0 -0.0825" rpy="0 ${0.5*pi} 0" />
     </xacro:dvl_plugin_macro>
 
