@@ -1,0 +1,9 @@
+<launch>
+    <arg name="interpolator" default="cubic"/>
+    <!-- Start some trajectory or waypoint generator node -->
+    <include file="$(find uuv_control_utils)/launch/send_waypoints_file.launch">
+        <arg name="uuv_name" value="eca_a9"/>
+        <arg name="filename" value="$(find eca_a9_gazebo)/config/waypoint_set.yaml"/>
+        <arg name="interpolator" value="$(arg interpolator)"/>
+    </include>
+</launch>

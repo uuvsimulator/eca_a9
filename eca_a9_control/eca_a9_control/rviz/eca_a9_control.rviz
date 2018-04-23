@@ -9,6 +9,7 @@ Panels:
         - /RobotModel1
         - /Sonar left1
         - /Sonar right1
+        - /Waypoint path1
         - /Fin 0 - Wrench1
         - /Fin 1 - Wrench1
         - /Fin 2 - Wrench1
@@ -85,6 +86,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        eca_a9/cc_sensor_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         eca_a9/dvl_link:
           Alpha: 1
           Show Axes: false
@@ -177,6 +182,8 @@ Visualization Manager:
           Value: true
         eca_a9/base_link:
           Value: true
+        eca_a9/base_link_ned:
+          Value: true
         eca_a9/base_stabilized:
           Value: true
         eca_a9/battery_link:
@@ -184,6 +191,8 @@ Visualization Manager:
         eca_a9/camera_link:
           Value: true
         eca_a9/camera_link_optical:
+          Value: true
+        eca_a9/cc_sensor_link:
           Value: true
         eca_a9/dvl_link:
           Value: true
@@ -219,6 +228,8 @@ Visualization Manager:
           Value: true
         world:
           Value: true
+        world_ned:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -229,11 +240,15 @@ Visualization Manager:
           eca_a9/base_footprint:
             eca_a9/base_stabilized:
               eca_a9/base_link:
+                eca_a9/base_link_ned:
+                  {}
                 eca_a9/battery_link:
                   {}
                 eca_a9/camera_link:
                   eca_a9/camera_link_optical:
                     {}
+                eca_a9/cc_sensor_link:
+                  {}
                 eca_a9/dvl_link:
                   eca_a9/dvl_sonar0_link:
                     {}
@@ -265,6 +280,8 @@ Visualization Manager:
                   {}
                 eca_a9/thruster_0:
                   {}
+          world_ned:
+            {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -278,8 +295,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: -95.0109024
-        Min Value: -100.770287
+        Max Value: -91.8094254
+        Min Value: -95.5871582
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -308,8 +325,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: -96.7250061
-        Min Value: -100.8498
+        Max Value: -75.8892899
+        Min Value: -95.6470261
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -337,13 +354,37 @@ Visualization Manager:
       Value: true
     - Angle Tolerance: 0.100000001
       Class: rviz/Odometry
-      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
       Enabled: true
       Keep: 100
-      Length: 1
       Name: Odometry
       Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.300000012
+        Head Radius: 0.100000001
+        Shaft Length: 1
+        Shaft Radius: 0.0500000007
+        Value: Arrow
       Topic: /eca_a9/pose_gt
+      Unreliable: false
       Value: true
     - Alpha: 1
       Buffer Length: 1
@@ -360,6 +401,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
+      Pose Color: 255; 85; 255
       Pose Style: None
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
@@ -378,7 +420,7 @@ Visualization Manager:
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
-      Color: 255; 85; 255
+      Color: 255; 85; 0
       Enabled: true
       Head Diameter: 0.300000012
       Head Length: 0.200000003
@@ -390,6 +432,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
+      Pose Color: 255; 85; 255
       Pose Style: None
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
@@ -474,6 +517,22 @@ Visualization Manager:
       Transport Hint: raw
       Unreliable: false
       Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /eca_a9/reference_marker
+      Name: Reference Marker
+      Namespaces:
+        "": true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /eca_a9/interpolator_visual_markers
+      Name: MarkerArray
+      Namespaces:
+        dubins: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -498,24 +557,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 45.4261551
+      Distance: 303.795349
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -3.19177771
-        Y: -35.2109604
-        Z: -11.3999739
+        X: 0
+        Y: 0
+        Z: 0
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.294796705
+      Pitch: 0.525398612
       Target Frame: eca_a9/base_link
       Value: Orbit (rviz)
-      Yaw: 1.48994911
+      Yaw: 2.36903524
     Saved: ~
 Window Geometry:
   Displays:
