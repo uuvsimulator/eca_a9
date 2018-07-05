@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>eca_a9_description</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>Robot description for the ECA A9 AUV</description>
 
   <maintainer email="thp@eca.fr">Thibault Pelletier</maintainer>
