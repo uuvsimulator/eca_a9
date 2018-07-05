@@ -2,8 +2,14 @@
 Changelog for package eca_a9_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.1 (2018-07-05)
 ------------------
+* ADD CHANGELOG files
+  Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
+* Contributors: Musa Morena Marcusso Manhaes
 
 0.1.0 (2018-04-23)
 ------------------
