@@ -25,7 +25,7 @@
   <xacro:property name="length" value="1.98"/>
   <xacro:property name="diameter" value="0.23"/>
   <xacro:property name="radius" value="${diameter*0.5}"/>
-  <xacro:property name="volume" value="${length*pi*radius*radius}"/>
+  <xacro:property name="volume" value="0.06799987704121499"/>
   <xacro:property name="cob" value="0 0 0.06"/>
   <xacro:property name="rho" value="1027.0"/>
 
@@ -71,7 +71,7 @@
         <link name="${namespace}/base_link">
           <volume>${volume}</volume>
           <center_of_buoyancy>${cob}</center_of_buoyancy>
-          <neutrally_buoyant>1</neutrally_buoyant>
+          <neutrally_buoyant>0</neutrally_buoyant>
           <hydrodynamic_model>
             <type>fossen</type>
             <added_mass>
