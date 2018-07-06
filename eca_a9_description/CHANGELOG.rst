@@ -2,6 +2,9 @@
 Changelog for package eca_a9_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.3 (2018-07-06)
+------------------
+
 0.1.2 (2018-07-05)
 ------------------
 * FIX DVL sensor noise input parameters
