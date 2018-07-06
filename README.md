@@ -7,6 +7,8 @@ an open-source project extending the simulation capabilities of the robotics
 simulator Gazebo to underwater vehicles and environments. For installation and
 usage instructions, please refer to the [documentation pages](https://uuvsimulator.github.io/).
 
+![ECA A9 AUV](eca_a9.png)
+
 ## Purpose of the project
 
 This software is a research prototype, originally developed for the EU ECSEL
