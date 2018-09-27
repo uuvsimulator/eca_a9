@@ -37,7 +37,7 @@
   <xacro:property name="prop_mesh_file" value="file://$(find eca_a9_description)/mesh/eca_a9_propeller.dae"/>
   <xacro:property name="fin_mesh_file" value="file://$(find eca_a9_description)/mesh/eca_a9_fin.dae"/>
 
-  <xacro:macro name="eca_a9_base" params="namespace debug">
+  <xacro:macro name="eca_a9_base" params="namespace debug inertial_reference_frame">
     <link name="${namespace}/base_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>

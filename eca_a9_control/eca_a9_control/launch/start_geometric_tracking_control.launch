@@ -116,8 +116,9 @@
           inertial_frame_id: world_ned
           min_thrust: $(arg min_thrust)
           max_thrust: $(arg max_thrust)
-          thruster_topic: $(arg thruster_topic)
-          thrust_gain: $(arg thrust_gain)
+          thruster_topic: $(arg thruster_topic)          
+          thrust_p_gain: $(arg thrust_p_gain)
+          thrust_d_gain: $(arg thrust_d_gain)
           p_roll: $(arg p_roll)
           p_pitch: $(arg p_pitch)
           d_pitch: $(arg d_pitch)
