@@ -1,0 +1,5 @@
+<launch>
+      <test test-name="test_urdf_files" 
+            pkg="eca_a9_description" 
+            type="test_urdf_files.py" />
+</launch>
