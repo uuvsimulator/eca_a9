@@ -27,11 +27,6 @@
     inertial_reference_frame="$(arg inertial_reference_frame)"/>
 
   <!-- Joint state publisher plugin -->
-  <gazebo>
-    <plugin name="joint_state_publisher" filename="libjoint_state_publisher.so">
-      <robotNamespace>$(arg namespace)</robotNamespace>
-      <updateRate>50</updateRate>
-    </plugin>
-  </gazebo>
+  <xacro:default_joint_state_publisher namespace="$(arg namespace)" update_rate="50"/>
 
 </robot>
