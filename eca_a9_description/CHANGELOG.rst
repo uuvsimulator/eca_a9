@@ -2,8 +2,8 @@
 Changelog for package eca_a9_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.4 (2019-02-14)
+------------------
 * Fix path and names to files after refactor
   Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
 * Add test for URDF file consistency
