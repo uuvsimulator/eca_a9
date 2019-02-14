@@ -2,6 +2,9 @@
 Changelog for package eca_a9_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.4 (2019-02-14)
+------------------
+
 0.1.3 (2018-07-06)
 ------------------
 * FIX Geometric tracking controller parameters
