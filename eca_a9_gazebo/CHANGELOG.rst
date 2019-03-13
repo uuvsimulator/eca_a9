@@ -2,6 +2,12 @@
 Changelog for package eca_a9_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.5 (2019-03-13)
+------------------
+* Fix dependencies for tests and update package.xml format
+  Signed-off-by: Musa Morena Marcusso Manhães <Musa.Marcusso@de.bosch.com>
+* Contributors: Musa Morena Marcusso Manhães
+
 0.1.4 (2019-02-14)
 ------------------
 
