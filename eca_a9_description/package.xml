@@ -23,6 +23,7 @@
   <exec_depend>uuv_sensor_ros_plugins</exec_depend>
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>uuv_assistants</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
 
   <test_depend>rostest</test_depend>
   <test_depend>xacro</test_depend>
