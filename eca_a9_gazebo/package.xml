@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>eca_a9_gazebo</name>
   <version>0.1.4</version>
   <description>Package with launch files for demonstrations with the ECA A9 AUV</description>
@@ -18,7 +18,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>eca_a9_description</run_depend>
-  <run_depend>eca_a9_control</run_depend>
+  <exec_depend>eca_a9_description</exec_depend>
+  <exec_depend>eca_a9_control</exec_depend>
 
 </package>
