@@ -2,8 +2,8 @@
 Changelog for package eca_a9_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.5 (2019-03-13)
+------------------
 * Add robot_state_publisher dependency
   Signed-off-by: Musa Morena Marcusso Manhães <Musa.Marcusso@de.bosch.com>
 * Fix dependencies for tests and update package.xml format
