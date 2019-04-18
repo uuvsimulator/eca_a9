@@ -52,7 +52,7 @@ class TestURDFFiles(unittest.TestCase):
 
 if __name__ == '__main__':
     import rosunit
-    rosunit.unitrun(PKG, NAME, TestRexROVURDFFiles)
+    rosunit.unitrun(PKG, NAME, TestURDFFiles)
 
 
 
