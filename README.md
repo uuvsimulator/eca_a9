@@ -1,4 +1,12 @@
-# ECA A9
+# ECA A9 AUV
+
+[![Build Status](https://travis-ci.org/uuvsimulator/eca_a9.svg?branch=master)](https://travis-ci.org/uuvsimulator/eca_a9)
+[![GitHub issues](https://img.shields.io/github/issues/uuvsimulator/eca_a9.svg)](https://github.com/uuvsimulator/eca_a9/issues)
+![License](https://img.shields.io/badge/license-Apache%202-blue.svg)
+
+> Link to the `eca_a9` repository [here](https://github.com/uuvsimulator/eca_a9)
+
+> Link to the [documentation page](https://uuvsimulator.github.io/packages/eca_a9/intro/) 
 
 This repository contains the robot description and necessary launch files to
 simulate the [ECA A9 autonomous underwater vehicle](https://www.ecagroup.com/en/solutions/a9-s-auv-autonomous-underwater-vehicle).
@@ -7,7 +15,7 @@ an open-source project extending the simulation capabilities of the robotics
 simulator Gazebo to underwater vehicles and environments. For installation and
 usage instructions, please refer to the [documentation pages](https://uuvsimulator.github.io/).
 
-![ECA A9 AUV](eca_a9.png)
+![ECA A9 AUV](images/eca_a9.png)
 
 ## Purpose of the project
 
@@ -44,7 +52,7 @@ To run a demonstration with the vehicle with teleoperation, you can run a UUV
 simulator Gazebo scenario, such as
 
 ```bash
-roslaunch uuv_descriptions ocean_waves.launch
+roslaunch uuv_gazebo_worlds ocean_waves.launch
 ```
 
 and then
@@ -76,9 +84,9 @@ the Gazebo's `.world` file with the following parameters for the physics engine:
 </physics>
 ```
 
-Check the [Mangalia world file](https://github.com/uuvsimulator/uuv_simulator/blob/master/uuv_descriptions/worlds/mangalia.world) to see an example.
+Check the [Mangalia world file](https://github.com/uuvsimulator/uuv_simulator/blob/master/uuv_gazebo_worlds/worlds/mangalia.world) to see an example.
 
 ## License
 
 ECA A9 package is open-sourced under the Apache-2.0 license. See the
-[LICENSE](LICENSE) file for details.
+[LICENSE](https://github.com/uuvsimulator/eca_a9/blob/master/LICENSE) file for details.
