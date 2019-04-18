@@ -1,12 +1,12 @@
 <launch>
-  <arg name="debug" default="0"/>
+  <arg name="debug" default="0" doc="Sets the DEBUG flag for the uuv_simulator's plugins for verbose mode"/>
 
-  <arg name="x" default="0"/>
-  <arg name="y" default="0"/>
-  <arg name="z" default="-20"/>
-  <arg name="roll" default="0.0"/>
-  <arg name="pitch" default="0.0"/>
-  <arg name="yaw" default="0.0"/>
+  <arg name="x" default="0" doc="X coordinate of the initial position to spawn the model (in ENU)"/>
+  <arg name="y" default="0" doc="Y coordinate of the initial position to spawn the model (in ENU)"/>
+  <arg name="z" default="-20" doc="Z coordinate of the initial position to spawn the model (in ENU)"/>
+  <arg name="roll" default="0.0" doc="Roll angle of the initial orientation to spawn the model (in ENU)"/>
+  <arg name="pitch" default="0.0" doc="Pitch angle of the initial orientation to spawn the model (in ENU)"/>
+  <arg name="yaw" default="0.0" doc="Yaw angle of the initial orientation to spawn the model (in ENU)"/>
 
   <arg name="use_geodetic" default="false"/>
   <arg name="latitude" default="0"/>
