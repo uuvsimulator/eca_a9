@@ -2,8 +2,8 @@
 Changelog for package eca_a9_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.6 (2019-04-19)
+------------------
 * Fix class call for rosunit
   Signed-off-by: Musa Morena Marcusso Manhães <musa.marcusso@de.bosch.com>
 * Fix name of the package
