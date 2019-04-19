@@ -2,6 +2,9 @@
 Changelog for package eca_a9_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.6 (2019-04-19)
+------------------
+
 0.1.5 (2019-03-13)
 ------------------
 * Fix dependencies for tests and update package.xml format
