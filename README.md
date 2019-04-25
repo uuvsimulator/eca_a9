@@ -6,7 +6,9 @@
 
 > Link to the `eca_a9` repository [here](https://github.com/uuvsimulator/eca_a9)
 
-> Link to the [documentation page](https://uuvsimulator.github.io/packages/eca_a9/intro/) 
+> Link to the [documentation page](https://uuvsimulator.github.io/packages/eca_a9/intro/)
+
+> Chat on [Discord](https://discord.gg/zNauF2F)
 
 This repository contains the robot description and necessary launch files to
 simulate the [ECA A9 autonomous underwater vehicle](https://www.ecagroup.com/en/solutions/a9-s-auv-autonomous-underwater-vehicle).
