@@ -31,8 +31,8 @@
         max_joint_limit="${80*d2r}"
         mesh_filename="${fin_mesh_file}"
         fin_dynamics_time_constant="0.1"
-        fin_cross_section_area="0.04155"        
-        current_velocity_topic="current_velocity"
+        fin_cross_section_area="0.04155"
+        current_velocity_topic="hydrodynamics/current_velocity"
         fluid_density="1027.0"
         a0="0.0"
         alpha_stall="0.174533"
@@ -53,12 +53,11 @@
         max_joint_limit="${45*d2r}"
         mesh_filename="${fin_mesh_file}"
         fin_dynamics_time_constant="0.1"
-        lift_constant="7.2"        
-        drag_constant="6.3"   
+        lift_constant="7.2"
+        drag_constant="6.3"
         current_velocity_topic="current_velocity">
         <xacro:insert_block name="origin"/>
       </xacro:fin_quadratic_macro>
     </xacro:macro> -->
 
 </robot>
-
