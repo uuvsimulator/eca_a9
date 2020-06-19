@@ -12,8 +12,10 @@ jobs:
         env:
           - {ROS_DISTRO: kinetic, ROS_REPO: main, CATKIN_LINT: true}
           - {ROS_DISTRO: kinetic, ROS_REPO: main, PRERELEASE: true}
+          - {ROS_DISTRO: kinetic, ROS_REPO: main, UPSTREAM_WORKSPACE: .eca_a9.rosinstall}
           - {ROS_DISTRO: melodic, ROS_REPO: main, CATKIN_LINT: true}
           - {ROS_DISTRO: melodic, ROS_REPO: main, PRERELEASE: true}
+          - {ROS_DISTRO: melodic, ROS_REPO: main, UPSTREAM_WORKSPACE: .eca_a9.rosinstall}
     env:
       CCACHE_DIR: /github/home/.ccache # Directory for ccache (and how we enable ccache in industrial_ci)
     runs-on: ubuntu-latest
